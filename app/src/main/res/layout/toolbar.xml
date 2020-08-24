@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00A884"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="NewApi"
+    app:titleTextColor="#F7F8F4"
+    app:title="Point of Sale"
+    app:titleMarginStart="80sp"
+    android:id="@+id/toolbar"
+    android:gravity="center_horizontal">
+</androidx.appcompat.widget.Toolbar>

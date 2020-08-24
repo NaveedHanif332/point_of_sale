@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_Payment">
+    <LinearLayout
+        android:layout_marginBottom="20sp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30sp"
+            android:id="@+id/back_add_pay"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Add payment"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/corner_radous"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_marginTop="30sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="Mode:"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/pay_spinner"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="3dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white">
+
+            </Spinner>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20sp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/add_acc_pay"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="5sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingTop="10sp"
+                    android:text="Account Name:"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/account_name_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="5sp"
+                    android:text="Account Name:"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/ser_account_for_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:hint="Search by name"
+                    android:keepScreenOn="false"
+
+
+                    android:textColorHint="@color/white">
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/acc_go_for_pay"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_search_black_24dp"
+                    android:textStyle="bold">
+
+                </ImageView>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:text="Payment Type:"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/pay_spinner_for_type"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:outlineAmbientShadowColor="@color/white"
+                android:outlineSpotShadowColor="@color/white">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="5sp"
+                android:maxLines="1"
+                android:text="Amount:"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+
+                android:id="@+id/pay_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110sp"
+                android:layout_marginTop="5sp"
+                android:hint="Amount in Rs"
+
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white">
+
+        </View>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="20sp"
+        android:id="@+id/add_pay_rec"
+        android:layout_width="match_parent"
+        android:layout_height="222dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <Button
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/btn_save_pay"
+        android:background="@drawable/corner_radous"
+        android:text="Save"
+        android:textColor="@color/white">
+    </Button>
+</LinearLayout >

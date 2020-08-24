@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment_main">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30sp"
+                android:id="@+id/back_main_pay"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                >
+            </ImageView>
+            <EditText
+                android:layout_width="180sp"
+                android:hint="Search pay_date here"
+                app:queryHint="Search Product here"
+                android:id="@+id/ser_pay"
+                android:layout_gravity="center"
+                android:keepScreenOn="false"
+                android:textColorHint="@color/white"
+
+                android:layout_height="50dp">
+
+            </EditText>
+            <ImageView
+                android:id="@+id/pay_go"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_height="wrap_content">
+            </ImageView>
+            <ImageView
+                android:id="@+id/pay_all"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_list_black_24dp"
+                android:layout_marginLeft="20sp"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Pay_id"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:text="Date"
+                android:textColor="@color/colorPrimary">
+                R</TextView>
+
+            <TextView
+                android:layout_width="90sp"
+                android:text="Account "
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Amount"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+            </TextView>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pay_rec_main"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_add"
+        android:contentDescription="Add Product "
+        android:layout_margin="30sp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

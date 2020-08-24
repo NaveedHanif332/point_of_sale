@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+
+    android:layout_height="100dp">
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        app:cardElevation="10dp"
+        android:id="@+id/list_adp_card"
+        app:cardCornerRadius="20dp"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="#605702"
+                android:id="@+id/list_adp_name"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/list_adp_price"
+                android:layout_width="50sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+
+                android:text="price"
+                android:textColor="#605702"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:layout_width="50dp"
+                android:text="Qty"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:id="@+id/list_adp_qty"
+                android:textColor="#605702"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+            </TextView>
+            <TextView
+                android:layout_width="50dp"
+                android:text="sub"
+                android:textColor="#605702"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/list_adp_sub"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

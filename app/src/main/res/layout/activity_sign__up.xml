@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".Sign_Up">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="260dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/splash">
+
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:padding="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/back_for_sign_up_login"
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+
+        android:orientation="vertical"
+        android:layout_height="450dp">
+        <EditText
+            android:id="@+id/sign_up_name"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="30sp"
+            android:hint="Name"
+            android:maxLines="1"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:background="@drawable/input_symble"
+            android:gravity="center_horizontal">
+        </EditText>
+        <EditText
+            android:id="@+id/sign_up_email"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:maxLines="1"
+            android:paddingRight="30sp"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:background="@drawable/input_symble"
+            android:gravity="center_horizontal">
+
+        </EditText>
+        <EditText
+            android:id="@+id/sign_up_password"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="passward"
+            android:maxLines="1"
+            android:inputType="textPassword"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:background="@drawable/input_symble"
+            android:gravity="center_horizontal">
+        </EditText>
+        <EditText
+            android:inputType="number"
+            android:id="@+id/sign_up_cnic"
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CNIC"
+            android:maxLines="1"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:background="@drawable/input_symble"
+            android:gravity="center_horizontal">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/sign_up_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:background="@drawable/corner_radous"
+            android:text="Sign Up"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/sign_in_already_acc"
+            android:textColor="#0D49E1"
+            android:layout_marginTop="15dp"
+            android:text="Already Have a account Login"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

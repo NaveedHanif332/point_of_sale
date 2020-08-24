@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_Account">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back_add_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:padding="30sp"
+            android:src="@drawable/ic_arrow_back_black_24dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Account"
+
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/corner_radous"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20sp"
+
+
+                android:paddingTop="20sp"
+                android:text="*Account Name"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/add_acc_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:gravity="center_horizontal"
+                android:hint="Enter Accountant's Name"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColorHint="@color/white">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20sp"
+                android:paddingTop="20sp"
+                android:text="*Account Type"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/add_acc_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:gravity="center_horizontal"
+                android:hint="Enter Account Type"
+
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColorHint="@color/white">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+
+                android:layout_marginLeft="20sp"
+                android:paddingTop="20dp"
+                android:text="*Phone Number"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/add_acc_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10sp"
+                android:gravity="center_horizontal"
+                android:hint="Enter phone number"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColorHint="@color/white">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20sp"
+
+                android:paddingTop="20sp"
+                android:text="Address"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/add_acc_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:gravity="center_horizontal"
+                android:hint="Address"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColorHint="@color/white">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20sp"
+                android:paddingTop="20dp"
+                android:text="*Starting Debit "
+                android:textColor="@color/white"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/add_acc_debit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:gravity="center_horizontal"
+                android:hint="Enter Debit Amount"
+
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColorHint="@color/white">
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20sp"
+
+                android:paddingTop="20sp"
+                android:text="*Starting Credit"
+                android:textColor="@color/white"
+                android:textSize="20dp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/add_acc_credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:gravity="center_horizontal"
+                android:hint="Enter Starting Credit"
+
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColorHint="@color/white"></EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_acc_btn_clr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/corner_radous"
+            android:text="clear"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="30sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/add_acc_btn_add"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/corner_radous"
+            android:text="ADD"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="30sp">
+
+        </Button>
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-8196601564130710/3014787443" />
+
+</LinearLayout>

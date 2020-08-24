@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_sale"
+    android:id="@+id/add_sale"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30sp"
+
+
+            android:id="@+id/back_new_sale"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_marginLeft="60sp"
+            android:layout_width="wrap_content"
+            android:text="New Sale"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/corner_radous"
+                android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20sp"
+                android:text="Customer type:">
+
+            </TextView>
+            <Spinner
+                android:layout_width="180dp"
+                android:layout_marginLeft="10dp"
+                android:outlineSpotShadowColor="@color/white"
+                android:outlineAmbientShadowColor="@color/white"
+                android:id="@+id/sale_spinner"
+                android:layout_marginTop="3dp"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/add_acc_sale"
+                    android:layout_width="188dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="5sp"
+                    android:paddingTop="10sp"
+                    android:ellipsize="end"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:text="Account Name:"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="5sp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/account_name_heading"
+                android:layout_marginLeft="20sp"
+                android:text="Account Name:"/>
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:hint="Search by name"
+
+                android:id="@+id/ser_account_for_sale"
+                android:layout_gravity="center"
+                android:keepScreenOn="false"
+                android:textColorHint="@color/white"
+
+
+                android:layout_height="48dp">
+
+            </EditText>
+            <ImageView
+                android:id="@+id/acc_go_for_sale"
+                android:layout_width="wrap_content"
+
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+        </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20sp"
+                android:text="Search Product:"/>
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:hint="Search by name"
+
+                android:id="@+id/ser_pro_for_sale"
+                android:layout_gravity="center"
+                android:keepScreenOn="false"
+                android:textColorHint="@color/white"
+                android:maxLines="1"
+                android:layout_height="48dp">
+
+            </EditText>
+            <ImageView
+                android:id="@+id/pro_go_for_sale"
+                android:layout_width="wrap_content"
+
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_for_demo"
+            android:layout_width="match_parent"
+
+            android:layout_height="100dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/heading"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/corner_radous"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="P_Name"
+                android:textColor="@color/white"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:text="Price"
+                android:textColor="@color/white">
+                R</TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Quantity"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Sub Total"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_sale_pro"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:text="finish"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:id="@+id/btn_sale_finish"
+            android:textColor="@color/white"
+            android:layout_height="33dp"
+
+            android:background="@drawable/corner_radous">
+
+        </Button>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/corner_radous"
+    android:elevation="10sp"
+    android:layout_margin="10dp"
+    android:id="@+id/linear_lay_cal"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Total Amount"
+                android:layout_marginLeft="20sp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="100sp"
+                android:text="Amount"
+                android:id="@+id/total_amount"
+                android:layout_marginLeft="110sp"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Discount         "
+                android:layout_marginLeft="20sp"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <EditText
+                android:layout_width="100dp"
+                android:hint="discount"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:id="@+id/discount"
+                android:layout_marginLeft="110sp"
+
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:layout_height="wrap_content">
+
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Final Amount "
+                android:textColor="@color/white"
+                android:layout_marginLeft="20sp"
+                android:textSize="20sp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Amount"
+                android:layout_marginLeft="110sp"
+                android:id="@+id/final_amount"
+
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+</LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:text="SAVE"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:id="@+id/btn_sale_save"
+            android:textColor="@color/white"
+            android:layout_height="33dp"
+
+            android:background="@drawable/corner_radous">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</LinearLayout>

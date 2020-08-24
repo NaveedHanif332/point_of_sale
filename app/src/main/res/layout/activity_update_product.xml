@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Update_product">
+    <LinearLayout
+        android:layout_marginBottom="30sp"
+        android:layout_width="match_parent"
+        android:background="#00A884"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30sp"
+
+
+            android:id="@+id/back_update_product"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Update Product"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/corner_radous"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="*Product Name"
+        android:layout_gravity="start"
+        android:paddingTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+       android:textColorHint="@color/white"
+        android:gravity="center_horizontal"
+        android:hint="Product Name"
+
+        android:inputType="text"
+        android:id="@+id/update_pro_p_name"
+        android:textAlignment="center">
+
+    </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="*Product cost"
+        android:layout_gravity="start"
+android:paddingTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+       android:textColorHint="@color/white"
+        android:gravity="center_horizontal"
+        android:hint=" Cost"
+
+        android:inputType="number"
+        android:id="@+id/update_pro_p_cast"
+        android:textAlignment="center">
+
+    </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="*Product Sale Price"
+        android:layout_gravity="start"
+android:paddingTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:textColorHint="@color/white"
+        android:gravity="center_horizontal"
+        android:hint=" Sale Price"
+
+        android:inputType="number"
+        android:id="@+id/update_pro_p_sale_price"
+        android:textAlignment="center">
+
+    </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="*Product Units"
+        android:layout_gravity="start"
+android:paddingTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:textColorHint="@color/white"
+        android:gravity="center_horizontal"
+
+        android:inputType="number"
+        android:id="@+id/update_pro_p_unit"
+        android:hint="units"
+        android:textAlignment="center">
+
+    </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="*Product Category"
+        android:layout_gravity="start"
+android:paddingTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:textColorHint="@color/white"
+        android:gravity="center_horizontal"
+        android:hint="Product Category"
+
+        android:inputType="text"
+        android:id="@+id/update_pro_p_cat"
+        android:textAlignment="center">
+
+    </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="*Exp Date"
+        android:layout_gravity="start"
+        android:paddingTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:textColorHint="@color/white"
+        android:gravity="center_horizontal"
+        android:hint="Expiry Date"
+
+        android:inputType="date"
+        android:id="@+id/update_pro_p_expire_date"
+        android:textAlignment="center">
+
+    </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="*Discount"
+        android:layout_gravity="start"
+android:paddingTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:textColorHint="@color/white"
+        android:gravity="center_horizontal"
+        android:hint="Discount"
+        android:inputType="numberDecimal"
+        android:id="@+id/update_pro_p_discount"
+        android:textAlignment="center">
+
+    </EditText>
+        </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="10dp"
+
+        android:layout_height="50dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/corner_radous"
+            android:text="clear"
+            android:textSize="30sp"
+
+            android:id="@+id/update_pro_btn_clr"
+            android:textColor="@color/white"
+            android:textAllCaps="false">
+
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/corner_radous"
+            android:text="Update"
+            android:layout_marginLeft="50dp"
+            android:textSize="30sp"
+            android:id="@+id/update_pro_btn_add"
+            android:textColor="@color/white"
+            android:textAllCaps="false">
+
+        </Button>
+    </LinearLayout>
+
+
+</LinearLayout>

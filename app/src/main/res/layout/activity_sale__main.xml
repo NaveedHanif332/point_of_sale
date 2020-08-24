@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product_Main">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#00A884"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30sp"
+                android:id="@+id/back_main_sale"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                >
+
+            </ImageView>
+            <EditText
+                android:layout_width="180sp"
+                android:hint="Search sale_id  here"
+                app:queryHint="Search Product here"
+                android:id="@+id/ser_sale"
+                android:layout_gravity="center"
+                android:keepScreenOn="false"
+                android:textColorHint="@color/white"
+
+                android:layout_height="50dp">
+
+            </EditText>
+            <ImageView
+                android:id="@+id/sale_go"
+                android:layout_width="wrap_content"
+
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/sale_all"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_list_black_24dp"
+                android:layout_marginLeft="20sp"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="S_ID"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="25dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:text="Sale_Date"
+                android:textColor="@color/colorPrimary">
+                R</TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Invoice No"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Amount"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="30dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/sale_rec"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_add"
+        android:contentDescription="Add Product "
+        android:layout_margin="30sp" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
